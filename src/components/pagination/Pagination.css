@@ -1,0 +1,11 @@
+.pagination {
+    display: flex;
+}
+
+.pagination-prev-page svg {
+    transform: rotate(180deg);
+}
+
+.pagination-next-page {
+    
+}
