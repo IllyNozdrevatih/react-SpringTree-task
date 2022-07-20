@@ -1,5 +1,4 @@
 import './Pagination.css'
-import {getQueryProperty} from '../../methods/getQueryProperty'
 
 function Pagination(props) {
   return (
@@ -20,8 +19,6 @@ function Pagination(props) {
 
   function moveToPage(pageNumber){
     props.handleChange(pageNumber)
-    const listLimit = getQueryProperty('limit', 3)
-    window.history.pushState({}, "", `?page=${pageNumber}&limit=${listLimit}`)
   }
 
   function handlerButtonPrevPage(){
